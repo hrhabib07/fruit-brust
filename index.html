@@ -41,7 +41,7 @@
             <!-- first div  -->
             <div class="flex-1  text-start">
                 <!-- items shown only small device  -->
-                <div class="ml-[50%] md:ml-0">
+                <div class="ml-[50%] md:ml-0 z-30">
                     <div class="dropdown">
                       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <!-- items shown only large screen -->
-                <div class="navbar text-start hidden lg:flex text-black lg:text-white text-xl">
+                <div class="navbar text-start hidden lg:flex text-black lg:text-white text-xl z-30">
     <ul class="menu menu-horizontal px-1">
       <li><a>Home</a></li>
       <li><a>About us</a></li>
@@ -84,61 +84,66 @@
 
           
           <!-- Slider starts here  -->
-          <div class="carousel w-full my-12">
+          <div class="carousel w-full my-2 lg:my-12">
             <div id="slide1" class="carousel-item relative w-full ">
                 <img src="images/banner1.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20 ">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide4" class="btn btn-circle bg-transparent border-0 text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-transparent border-0 text-white">❯</a>
                 </div>
                 <!-- style on top of image  -->
-                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
-                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
-                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-1 lg:space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-lg lg:text-xl">We supply highly quality organic products</p>
                     <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
                 </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
                 <img src="images/banner2.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                    <a href="#slide1" class="btn btn-circle bg-transparent border-0 text-white ">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-transparent border-0 text-white">❯</a>
                 </div>
                 <!-- style on top of image  -->
-                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
-                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
-                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-1 lg:space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-lg lg:text-xl">We supply highly quality organic products</p>
                     <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
                 </div>
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
                 <img src="images/banner3.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
+                    <a href="#slide2" class="btn btn-circle bg-transparent border-0 text-white">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-transparent border-0 text-white">❯</a>
                 </div>
                 <!-- style on top of image  -->
-                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
-                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
-                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-1 lg:space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-lg lg:text-xl">We supply highly quality organic products</p>
                     <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
                 </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full">
                 <img src="images/banner4.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    <a href="#slide3" class="btn btn-circle bg-transparent border-0 text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-transparent border-0 text-white">❯</a>
                 </div>
                 <!-- style on top of image  -->
-                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
-                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
-                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-1 lg:space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-lg lg:text-xl">We supply highly quality organic products</p>
                     <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
                 </div>
             </div>
         </div>
 
+
+        <!-- bottom part of slider  -->
+        <div class="hidden lg:flex items-center justify-center">
+
+        </div>
 
 
 
