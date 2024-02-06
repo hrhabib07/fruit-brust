@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
+    <title>Fruit Burst</title>
     <!-- google font added -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            "fruit-primary": '#F85559',
           }
         }
       }
@@ -31,7 +32,61 @@
     }
   </style>
 </head>
-<body>
-    
+<body class="font-leto">
+    <header class="container mx-auto">
+
+
+         <!-- navbar starts here  -->
+         <div class="navbar bg-white lg:bg-fruit-primary rounded-full flex-row-reverse lg:flex-row ">
+            <div class="flex-1  text-start">
+                <!-- items shown only small device  -->
+                <div class="ml-[50%] md:ml-0">
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </div>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-24">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All fruits</a></li>
+                      </ul>
+                    </div>
+                </div>
+<!-- items shown only large screen -->
+<div class="navbar text-start hidden lg:flex text-black lg:text-white text-xl">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+      <li><a>About us</a></li>
+      <li><a>Shop</a></li>
+      <li><a>All fruits</a></li>
+    </ul>
+  </div>
+
+            </div>
+            <!-- images starts here -->
+            <div class="flex-1 text-black lg:text-white">
+              <a class="btn btn-ghost text-xl"> <img class="w-8" src="images/logo.png" alt=""> Fruit Burst</a>
+            </div>
+            <!-- search bar starts here  -->
+            <div class="flex-none hidden lg:flex">
+              <div class="form-control">
+                <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-full rounded-e-none border-none" />
+              </div>
+              <button class="btn rounded-s-none btn-ghost btn-circle block bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+            </div>
+          </div>
+
+
+
+
+
+
+
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
