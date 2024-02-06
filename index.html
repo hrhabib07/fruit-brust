@@ -38,6 +38,7 @@
 
          <!-- navbar starts here  -->
          <div class="navbar bg-white lg:bg-fruit-primary rounded-full flex-row-reverse lg:flex-row ">
+            <!-- first div  -->
             <div class="flex-1  text-start">
                 <!-- items shown only small device  -->
                 <div class="ml-[50%] md:ml-0">
@@ -53,24 +54,26 @@
                       </ul>
                     </div>
                 </div>
-<!-- items shown only large screen -->
-<div class="navbar text-start hidden lg:flex text-black lg:text-white text-xl">
+                <!-- items shown only large screen -->
+                <div class="navbar text-start hidden lg:flex text-black lg:text-white text-xl">
     <ul class="menu menu-horizontal px-1">
       <li><a>Home</a></li>
       <li><a>About us</a></li>
       <li><a>Shop</a></li>
       <li><a>All fruits</a></li>
     </ul>
-  </div>
-
+                </div>
             </div>
-            <!-- images starts here -->
+            <!-- second div  -->
             <div class="flex-1 text-black lg:text-white">
-              <a class="btn btn-ghost text-xl"> <img class="w-8" src="images/logo.png" alt=""> Fruit Burst</a>
+                <a class="btn btn-ghost text-xl">
+                  <!-- images starts here -->
+                <img class="w-8" src="images/logo.png" alt=""> Fruit Burst</a>
             </div>
-            <!-- search bar starts here  -->
+            <!-- third div  -->
             <div class="flex-none hidden lg:flex">
-              <div class="form-control">
+                <div class="form-control">
+                  <!-- search bar starts here  -->
                 <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-full rounded-e-none border-none" />
               </div>
               <button class="btn rounded-s-none btn-ghost btn-circle block bg-white">
@@ -79,8 +82,62 @@
             </div>
           </div>
 
-
-
+          
+          <!-- Slider starts here  -->
+          <div class="carousel w-full my-12">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <img src="images/banner1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20 ">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+                <!-- style on top of image  -->
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                    <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
+                </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+                <!-- style on top of image  -->
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                    <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
+                </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+                <!-- style on top of image  -->
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                    <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
+                </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-20">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+                <!-- style on top of image  -->
+                <div class="absolute top-0 left-0 w-full text-center flex flex-col items-center justify-center h-full space-y-4 bg-gradient-to-b from-[#000000d5] z-10">
+                    <h2 class="text-white text-3xl lg:text-6xl font-bold">Exotic tastes at your  <br> doorstep</h2>
+                    <p class="text-white text-xl">We supply highly quality organic products</p>
+                    <button class="btn bg-fruit-primary border-0 w-24 text-white hover:text-black">Shop Now</button>
+                </div>
+            </div>
+        </div>
 
 
 
